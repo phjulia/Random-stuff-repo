@@ -1,0 +1,111 @@
+{
+  "workflowApiVersion": "1.1",
+  "metaData": {
+    "version": "2.0",
+    "icon": "https://localhost:3000/image.png",
+    "expressionBuilderPrefix": "Custom",
+    "category": "message"
+  },
+  "type": "REST",
+  "lang": {
+    "en-US": {
+      "name": "CustomApp",
+      "description": "Custom app "
+    }
+  },
+  "copySettings": { "allowCopy": true },
+  "arguments": {
+    "execute": {
+      "inArguments": [],
+      "outArguments": [],
+      "url": "https://localhost:3000/execute",
+      "verb": "POST",
+      "body": "",
+      "header": "",
+      "format": "json",
+      "useJwt": true,
+      "customerKey": "jmbyrS66OvzeeacM7kLiEczLRQxE9DZQ",
+      "timeout": 10000
+    },
+    "testExecute": {
+      "inArguments": [],
+      "outArguments": [],
+      "url": "https://localhost:3000/testExecute",
+      "verb": "POST",
+      "body": "",
+      "header": "",
+      "format": "json",
+      "useJwt": true,
+      "customerKey": "jmbyrS66OvzeeacM7kLiEczLRQxE9DZQ",
+      "timeout": 10000
+    }
+  },
+  "configurationArguments": {
+    "applicationExtensionKey": "CustomApp",
+    "save": {
+      "url": "https://localhost:3000/save",
+      "body": "",
+      "header": "",
+      "verb": "POST",
+      "useJwt": true,
+      "customerKey": "jmbyrS66OvzeeacM7kLiEczLRQxE9DZQ"
+    },
+    "publish": {
+      "url": "https://localhost:3000/publish",
+      "verb": "POST",
+      "header": "",
+      "body": "",
+      "useJwt": true,
+      "customerKey": "jmbyrS66OvzeeacM7kLiEczLRQxE9DZQ"
+    },
+    "validate": {
+      "url": "https://localhost:3000/validate",
+      "verb": "POST",
+      "header": "",
+      "body": "",
+      "useJwt": true,
+      "customerKey": "jmbyrS66OvzeeacM7kLiEczLRQxE9DZQ"
+    },
+    "testSave": {
+      "url": "https://localhost:3000/testSave",
+      "body": "",
+      "header": "",
+      "verb": "POST",
+      "useJwt": true,
+      "customerKey": "jmbyrS66OvzeeacM7kLiEczLRQxE9DZQ"
+    },
+    "testPublish": {
+      "url": "https://localhost:3000/testPublish",
+      "verb": "POST",
+      "header": "",
+      "body": "",
+      "useJwt": true,
+      "customerKey": "jmbyrS66OvzeeacM7kLiEczLRQxE9DZQ"
+    },
+    "testValidate": {
+      "url": "https://localhost:3000/testValidate",
+      "verb": "POST",
+      "header": "",
+      "body": "",
+      "useJwt": true,
+      "customerKey": "jmbyrS66OvzeeacM7kLiEczLRQxE9DZQ"
+    }
+  },
+  "edit": {
+    "url": "https://localhost:3000",
+    "height": 500,
+    "width": 800
+  },
+  "userInterfaces": {
+    "configInspector": {
+      "size": "large",
+      "isModalLayout": true
+    },
+    "runningHover": {
+      "url": "https://localhost:3000/running"
+    },
+    "runningModal": {
+      "url": "https://localhost:3000/running"
+    }
+  }
+}
